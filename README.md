@@ -5,14 +5,14 @@ enough gotchas that I thought a working repo would be useful for my future self 
 
 Obviously, there is limited utility in production for the repo as-is. Use and modify at your own risk.
 
-# Raodmap
+# Roadmap
 * Initial Release: import gcloud storages and setup for a bucket as the storage backend.
 * Milestone: example route for uploading files stored to bucket.
 * Milestone: example route for extracting file from bucket
 
 ... and that's it! After these are done, I will try to update for future versions of the google cloud storages package and django.
 
-# TO RUN
+# To Run
 
 To run, one must have in their env the following:
 
