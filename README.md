@@ -1,6 +1,6 @@
 # django-gbucket
 
-A base project incorporating gcloud buckets with django. This is meant to be a starting point for other projects that I have using gcloud buckets with django. There is adequate docuemntation, but there were
+A base project incorporating gcloud buckets with django, using the gcloud storage django-storages sdk [ref](https://django-storages.readthedocs.io/en/latest/backends/gcloud.html). This is meant to be a starting point for other projects that I have using gcloud buckets with django. There is adequate docuemntation, but there were
 enough gotchas that I thought a working repo would be useful for my future self as well as others.
 
 Obviously, there is limited utility in production for the repo as-is. Use and modify at your own risk.
