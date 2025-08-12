@@ -1,0 +1,25 @@
+[project]
+name = "django-gbucket"
+version = "0.1.0"
+description = "A base project for integrating django with a gcloud bucket as a backend"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "psycopg2-binary",
+    "python-decouple",
+    "dj-database-url",
+    "requests",
+    "django",
+    "django-ninja",
+    "django-storages",
+    "django-cors-headers",
+    "python-decouple",
+    "google-cloud-storage"
+    ]
+
+
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests"
+    ]
