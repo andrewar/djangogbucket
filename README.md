@@ -14,3 +14,11 @@ Obviously, there is limited utility in production for the repo as-is. Use and mo
 
 
 
+# Comments
+
+I think in general this is actually an anti-pattern. I'm encapsulating the server in a docker container, but by consuming the google storage sdk, I'm building knowledge of the system architecture into the code. This will make it more difficult to update and change the overall architecture (including a code change coupled with a devops change) any time the system is updated.
+
+An obvious place this impacts is a development env vs. prod (or staging). If the dev env is defined using django envs, then all testing is done using code paths not used in production - and the first time the prod code paths are used is *in production*.
+
+A better pattern, in my opinion, is to abstract the storage in such a way that the configuration at the container level is handled 'correctly' in the code (similarly for the db). This way, the same 
+code is used in all envs, and setting the correct env is all that is needed to be successful.
