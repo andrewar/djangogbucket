@@ -140,3 +140,11 @@ STORAGES = {
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+
+# Google Cloud Storage Settings
+GS_BUCKET_NAME = config('GS_BUCKET_NAME','NO_BUCKET_NAME')  # Replace with your bucket name
+GS_CREDENTIALS = service_account.Credentials.from_service_account_file(config('GOOGLE_APPLICATION_CREDENTIALS'))  # Replace with the path to your JSON key file
+GS_PROJECT_ID = config('GS_PROJECT_ID', 'NO_PROJECT_ID')
+
+
+
